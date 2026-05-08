@@ -15,7 +15,8 @@
 
         body {
             font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background: linear-gradient(180deg, #ffffff 0%, #e0e0e0 100%);
+            /* Background utama Merah Maroon ke Gelap */
+            background: linear-gradient(180deg, #4a0404 0%, #2b0202 100%);
             min-height: 100vh;
             display: flex;
             flex-direction: column;
@@ -32,8 +33,8 @@
             padding: 30px;
             border-radius: 30px;
             text-align: center;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-            border: 1px solid #f0f0f0;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .album-art {
@@ -52,7 +53,6 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            /* Mengatur agar wajah kalian pas di tengah frame */
             object-position: 50% 15% !important;
         }
 
@@ -64,7 +64,8 @@
 
         .info p {
             margin: 0 0 20px;
-            color: #1db954;
+            /* Warna teks pink maroon */
+            color: #b03060;
             font-size: 0.85rem;
             font-weight: bold;
         }
@@ -85,12 +86,12 @@
         }
 
         .btn:hover {
-            color: #1db954;
+            color: #b03060;
         }
 
         .play-pause {
             font-size: 50px;
-            color: #1db954;
+            color: #b03060;
         }
 
         .lyrics-section {
@@ -106,15 +107,16 @@
             line-height: 1.5;
         }
 
-        /* ===== BAGIAN PESAN ULANG TAHUN ===== */
+        /* ===== BAGIAN PESAN (MAROON & PINK) ===== */
         .message-card {
             width: 320px;
-            background: linear-gradient(135deg, #1a0533, #2d1060);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            /* Gradasi Maroon ke Pink Tua */
+            background: linear-gradient(135deg, #800000, #b03060);
+            border: 1px solid rgba(255, 255, 255, 0.2);
             border-radius: 30px;
             padding: 30px;
             color: #ffffff;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
             font-family: 'Georgia', serif;
         }
 
@@ -123,7 +125,7 @@
             font-size: 0.65rem;
             letter-spacing: 2px;
             text-transform: uppercase;
-            color: rgba(200, 150, 255, 0.7);
+            color: rgba(255, 192, 203, 0.8); /* Warna Pink Muda */
             margin-bottom: 10px;
         }
 
@@ -132,7 +134,8 @@
             font-size: 1.15rem;
             font-weight: 700;
             margin-bottom: 20px;
-            background: linear-gradient(90deg, #c084fc, #818cf8, #63b3ed);
+            /* Gradasi teks Pink Putih */
+            background: linear-gradient(90deg, #ffc0cb, #ffffff, #ffb6c1);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -140,7 +143,7 @@
 
         .msg-paragraph {
             font-size: 0.88rem;
-            color: rgba(255, 255, 255, 0.85);
+            color: rgba(255, 255, 255, 0.9);
             line-height: 1.8;
             margin-bottom: 18px;
             text-align: justify;
@@ -149,11 +152,11 @@
         .msg-closing {
             margin-top: 25px;
             padding-top: 15px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
             text-align: right;
             font-family: 'Segoe UI', sans-serif;
             font-size: 0.75rem;
-            color: rgba(255, 255, 255, 0.4);
+            color: rgba(255, 255, 255, 0.5);
             font-style: italic;
         }
     </style>
@@ -163,7 +166,7 @@
 
     <div class="player-card">
         <div class="album-art">
-            <img src="girl.jpg" alt="Foto Kenangan">
+            <img src="mama.jpg" alt="Foto Kenangan">
         </div>
 
         <div class="info">
@@ -172,7 +175,7 @@
         </div>
 
         <audio id="myAudio">
-            <source src="bestpartt.m4a" type="audio/mp4">
+            <source src="you.m4a" type="audio/mp4">
         </audio>
 
         <div class="controls">
@@ -183,35 +186,35 @@
 
         <div class="lyrics-section">
             <p class="lyrics-text">
-                "HAPPY BIRTHDAY GIRL"<br>
-                "Setiap langkah kaki di taman mengingatkanku pada momen indah bersamamu..."
+                "HAPPY BIRTHDAY, NURUL ASHFIYA"<br>
+                "Di antara jutaan nada yang bising, hadirmu adalah melodi yang paling menetap."
             </p>
         </div>
     </div>
 
     <div class="message-card">
         <div class="msg-label">✦ Sebuah Pesan Untukmu</div>
-        <div class="msg-title">Selamat Ulang Tahun SELFIANA🎂</div>
+        <div class="msg-title">Selamat Bertambah Usia, Nurul Ashfiya🎂</div>
         
-        <hr style="opacity: 0.1; margin-bottom: 20px;">
+        <hr style="opacity: 0.2; margin-bottom: 20px;">
 
         <p class="msg-paragraph">
-            Hari ini, semesta tidak hanya mencatat pertambahan angka pada usiamu, tetapi juga merayakan ketangguhan jiwa yang selama ini kau bawa dalam diam. Selamat ulang tahun.
+            Hari ini, semesta sedang merapikan barisan bintang hanya untuk memberi ruang bagi namamu. Selamat bertambah usia. Biarlah angka-angka itu menjadi saksi bahwa kau telah berhasil menaklukkan banyak badai dan tetap berdiri dengan keanggunan yang sama.
         </p>
 
         <p class="msg-paragraph">
-            Jangan pernah gentar pada dunia yang terkadang riuh dan tak menentu. Jika hari-hari mendatang terasa seperti tanjakan yang melelahkan, jadikan setiap helai napasmu sebagai sajak keberanian. Kau lebih dari sekadar rupa yang indah; kau adalah perpaduan antara kecerdasan, doa-doa yang terkabul, dan semangat yang tak boleh padam oleh kegagalan kecil.
+            Dunia mungkin sering kali riuh dan menuntutmu untuk berlari, namun ingatlah bahwa kau adalah puisi yang tak perlu terburu-buru untuk dibaca. Jangan biarkan bising di luar sana memadamkan sunyi yang damai di dalam hatimu. Kau adalah perpaduan antara ketabahan yang tenang dan cahaya yang tak pernah menyerah pada gelap.
         </p>
 
         <p class="msg-paragraph">
-            Teruslah melangkah, meski terkadang harus perlahan. Jangan bandingkan kecepatanmu dengan orang lain, karena setiap bunga memiliki musim mekar yang berbeda. Jadikan usia baru ini sebagai panggung di mana kau adalah tokoh utamanya — yang berani menulis plotnya sendiri, yang tangguh menghadapi konflik, dan yang selalu menemukan jalan pulang menuju bahagia.
+            Di usia yang baru ini, jadilah seperti akar; diam namun menguat, dan jadilah seperti dahan; fleksibel namun tak mudah patah. Jangan pernah membandingkan musim mekarmu dengan taman orang lain. Setiap jiwa memiliki garis waktunya sendiri, dan saat ini, waktu sedang berpihak pada keajaiban yang akan kau jemput.
         </p>
 
         <p class="msg-paragraph">
-            Mekarlah dengan hebat, berlarilah dengan kuat, dan tetaplah menjadi versi terbaik dari dirimu yang penuh cahaya.
+            Teruslah melukis warna-warni baru di kanvas takdirmu. Mekarlah dengan caramu yang paling jujur, dan tetaplah menjadi versi dirimu yang paling bercahaya di antara jutaan fana lainnya.
         </p>
 
-        <div class="msg-closing">— BY fahrian Dengan sepenuh hati 🤍</div>
+        <div class="msg-closing">— Ditulis dari anak(fahrian)</div>
     </div>
 
     <script>
@@ -220,10 +223,10 @@
 
         function togglePlay() {
             if (audio.paused) {
-                audio.play(); // Melanjutkan lagu dari posisi terakhir
+                audio.play();
                 playBtn.innerHTML = "⏸";
             } else {
-                audio.pause(); // Berhenti di detik terakhir (tidak reset)
+                audio.pause();
                 playBtn.innerHTML = "▶";
             }
         }
